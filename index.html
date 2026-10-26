@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Inputs</title>
+
+    <style>
+        *{
+            margin-bottom: 15px;
+        }
+        img{
+            width: 100PX;
+            border-radius: 50%;
+        }
+
+        input{
+            height: 25px;
+            width: 150px; 
+        }
+
+        p{
+            font-weight: 700;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form action="./enviar.html">
+        <img src="https://placehold.co/200x200/orange/fff?text=Usuário" alt="Imagem do placehold" /> <br />
+
+        <label for="cpf">Documento de Identificação:</label> <br />
+        <input type="text" id="cpf" name="cpf-usuario" value="1234" placeholder="Informe seu CPF" maxlength="14" required/> <br />
+
+        <label for="senha">Senha:</label> <br />
+        <input type="password" id="senha" name="senha-usuario" placeholder="Digite sua senha:" required/> <br />
+
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpar">
+
+        <a href="#">
+            <p>Esqueci minha senha</p> 
+        </a>
+        <p>---------------- OU ----------------</p>
+        <input type="email" placeholder="Digite seu e-mail."> <br />
+        <input type="submit" value="Cadastrar">
+
+        <hr />
+        <input type="number" min="2" max="20" value="2" step="2">
+
+        <p>Selecione o seu curso atual:</p>
+
+        <input type="radio" id="dev" name="sel-curso" value="dev">
+        <label for="dev">Desenvolvimento de sistemas</label> <br />
+
+        <input type="radio" id="ads" name="sel-curso" value="ads">
+        <label for="ads">Análise e Desenvolvimento de sistemas</label> <br />
+
+        <input type="radio" id="si" name="sel-curso" value="si">
+        <label for="si">Sistemas para Internet</label> <br />
+
+        <hr />
+
+        <label for="cor">Selecione sua cor favorita:</label>
+        <input type="color" value="pink">
+
+        <p>Selecione os dias da semana que você tem disponibilidade:</p>
+
+        <input type="checkbox" id="segunda" name="segunda-feira">
+        <label for="segunda" value="segunda-feira" >Segunda-Feira</label>
+
+        <input type="checkbox" id="quarta" name="quarta-feira">
+        <label for="quarta" value="quarta-feira" >Quarta-Feira</label>
+
+        <input type="checkbox" id="sexta" name="sexta-feira" checked>
+        <label for="sexta" value="sexta-feira" >Sexta-Feira</label>
+
+        <p>Qual a sua comida favorita?</p>
+
+        <select name="comida-favorita" id="comida-favorita">
+
+            <option selected disabled>Selecione um item</option>
+            <option value="burgao">Burgão</option>
+            <option value="podrao">Podrão</option>
+            <option value="pizza">Pizza</option>
+            <option value="churrasco">Churrasco</option>
+        </select>
+
+    </form>
+
+</body>
+</html>
